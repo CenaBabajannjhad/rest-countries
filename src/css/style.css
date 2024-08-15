@@ -8,6 +8,27 @@
     --home-page-items-fontsize : 14px;
     --Detail-page : 16px;
 }
+/* fonts */
+@font-face {
+    font-family: 'Shabnam-Light';
+    src: url(../../assets/fonts/Shabnam-Light.ttf);
+}
+@font-face {
+    font-family: 'Shabnam-Medium';
+    src: url(../../assets/fonts/Shabnam-Medium.ttf);
+}
+@font-face {
+    font-family: 'Shabnam-Bold';
+    src: url(../../assets/fonts/Shabnam-Bold.ttf);
+}
+/* utilities */
+.container{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
 /* reset styles */
 * , 
 *::before , 
@@ -19,4 +40,34 @@
     list-style-type: none;
     scroll-behavior: smooth;
 }
-/* body */
+/* media queries */
+@media screen and (max-width : 1536px) {
+    .container{
+        max-width: 1280px;
+    }
+}
+@media screen and (max-width : 1280px) {
+    .container{
+        max-width: 1024px;
+    }
+}
+@media screen and (max-width : 1024px) {
+    .container{
+        max-width: 768px;
+    }
+}
+@media screen and (max-width : 768px) {
+    .container{
+        max-width: 640px;
+    }
+}
+@media screen and (max-width : 640px) {
+    .container{
+        max-width: 475px;
+    }
+}
+@media screen and (max-width : 475px) {
+    .container{
+        width: 100%;
+    }
+}
