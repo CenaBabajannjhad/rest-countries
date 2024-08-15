@@ -6,7 +6,7 @@
     --Very-Light-Gray--lightModeBackground :  hsl(0, 0%, 98%);
     --white-darkModeTextAndLightModeElements :  hsl(0, 0%, 100%);
     --home-page-items-fontsize : 14px;
-    --Detail-page : 16px;
+    --Detail-page-fontsize : 16px;
 }
 /* fonts */
 @font-face {
