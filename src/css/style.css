@@ -8,6 +8,10 @@
   --home-page-items-fontsize: 14px;
   --Detail-page-fontsize: 16px;
 }
+/* utilities */
+.disable{
+  display: none;
+}
 /* fonts */
 @font-face {
   font-family: "Shabnam-Light";

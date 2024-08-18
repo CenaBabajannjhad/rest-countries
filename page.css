@@ -29,6 +29,9 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.hidden{
+  display: none !important;
+}
 /* reset styles */
 *,
 *::before,

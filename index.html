@@ -21,12 +21,14 @@
         <input type="search" placeholder="Search for a country..." />
       </div>
       <div class="region">
-        <select name="Filter by region" id="">
-          <option value="">Europ</option>
-          <option value="">Asia</option>
-          <option value="">Afrika</option>
-          <option value="">Ustralia</option>
-          <option value="">America</option>
+        <select name="Filter by region" id="select">
+          <option value="select">select region</option>
+          <option value="All">All</option>
+          <option value="Europe">Europe</option>
+          <option value="Asia">Asia</option>
+          <option value="Africa">Africa</option>
+          <option value="Oceania">Oceania</option>
+          <option value="Americas">Americas</option>
         </select>
       </div>
     </section>
@@ -37,5 +39,6 @@
 
 
   <script src="./src/js/script.js"></script>
+  <script src="./src/js/filterCountries.js"></script>
 </body>
 </html>
