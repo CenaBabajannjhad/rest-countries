@@ -19,6 +19,7 @@ selectRegion.addEventListener("change", (Event) => {
         const elementAttribute = element.getAttribute("data-region");
         console.log(elementAttribute !== "Europe");
         console.log(elementAttribute);
+
         if (elementAttribute !== "Europe") {
           element.style.display = "none";
         }
@@ -66,4 +67,3 @@ selectRegion.addEventListener("change", (Event) => {
     }
   }
 });
-

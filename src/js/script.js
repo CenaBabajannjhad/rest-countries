@@ -32,6 +32,7 @@ const countryBoxes = async () => {
     countriesImg.src = item.flag;
     countriesInformation.classList.add("item-caption", "flex");
     countriesName.textContent = item.name;
+    countriesName.className = 'country-name'
     popSpan.textContent = "Population :";
     popCountspan.textContent = item.population;
     regSpan.textContent = "Region :";
