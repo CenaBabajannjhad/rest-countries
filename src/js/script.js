@@ -3,14 +3,38 @@ function app() {
   countryBoxes();
 }
 
-const Data = async () => {
-  let res = await fetch("./src/json/data.json");
-  let data = await res.json();
-  return data;
+
+
+const getData = async () => {
+  try{
+    const res = await fetch("./src/json/data.json");
+
+    if(res.ok){
+      const data = await res.json();
+      return data;
+    }else{
+      throw new Error(res.status)
+    }
+  }catch(err){
+    console.error(err);
+    alert(err)
+  }
 };
+
+
+
+
+
+
+
+
+
+
+
+
 const countryBoxes = async () => {
   let root = document.querySelector("#country-boxes-place");
-  const countryData = await Data();
+  const countryData = await getData();
 
   countryData.map((item) => {
     let countriesWrapper = document.createElement("div");
