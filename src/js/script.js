@@ -4,7 +4,7 @@ function app() {
 }
 
 
-
+// fetch data from json file
 const getData = async () => {
   try{
     const res = await fetch("./src/json/data.json");
@@ -26,12 +26,7 @@ const getData = async () => {
 
 
 
-
-
-
-
-
-
+// show all countries in dom
 const countryBoxes = async () => {
   let root = document.querySelector("#country-boxes-place");
   const countryData = await getData();
