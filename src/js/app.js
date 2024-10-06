@@ -46,7 +46,8 @@ const countryBoxes = async () => {
     let capSpan = document.createElement("span");
     let capNameSpan = document.createElement("span");
     // attributes
-    countriesWrapper.setAttribute('data-region' , item.region)
+    countriesWrapper.setAttribute('data-region' , item.region);
+    countriesWrapper.setAttribute('data-name' , item.name);
     countriesWrapper.className = 'country-item';
     countriesImg.src = item.flag;
     countriesInformation.classList.add("item-caption", "flex");

@@ -1,10 +1,16 @@
-const selectTag = document.querySelector("#select");
+const selectElement = document.querySelector("#select-regions");
 
-selectTag.addEventListener("change", (e) => {
+selectElement.addEventListener("change", (e) => {
+  const countrieCards = document.querySelectorAll('.country-item');
+  let regionSelected = e.target.value;
 
-  let value = e.target.value.trim().toLowerCase();
-  if(value !== 'select'){
+    countrieCards.forEach(card => {
+      card.classList.add('disable');
 
-  }
+      if(card.dataset.region === e.target.value || e.target.value === 'All'){
+        card.classList.remove('disable');
+      }
+
+    })
 });
 
